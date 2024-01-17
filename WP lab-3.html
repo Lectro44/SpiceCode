@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Animation</title>
+    <style>
+        #layer1{
+            position: absolute;
+            top: 150px;
+            left: 250px;
+        }
+        #layer2{
+            position: absolute;
+            top: 150px;
+            left: 550px;
+        }
+        #layer3{
+            position: absolute;
+            top: 150px;
+            left: 850px;
+        }
+        img{
+            height: 200px;
+            width: 200px;
+            border-radius: 8px;
+        }
+        /* img:hover{
+            border: 8px solid red;
+            border-style: dashed;
+        }
+        body{
+            background-color: black;
+            text-align: center;
+            color: crimson;
+            font-size: 200%;
+        }
+        span{
+            color: rgb(255, 0, 247);
+        } */
+    </style>
+    <script>
+        function moveImage(layer){
+            var top=window.prompt("Enter Top value");
+            var left=window.prompt("Enter left value");
+            document.getElementById(layer).style.top=top+'px';
+            document.getElementById(layer).style.left=left+'px';
+        }
+    </script>
+</head>
+<body style="text-align: center;">
+    <h1><span>Test your</span> Luck !!</h1>
+    <div id="layer1"><img src="https://png.pngtree.com/png-vector/20210219/ourlarge/pngtree-jackpot-big-win-slot-777-with-gold-coin-line-art-style-png-image_2922662.jpg" onclick="moveImage('layer1')" alt="My Image"/></div>
+    <div id="layer2"><img src="https://png.pngtree.com/png-vector/20210219/ourlarge/pngtree-jackpot-big-win-slot-777-with-gold-coin-line-art-style-png-image_2922662.jpg" onclick="moveImage('layer2')" alt="My Image"/></div>
+    <div id="layer3"><img src="https://png.pngtree.com/png-vector/20210219/ourlarge/pngtree-jackpot-big-win-slot-777-with-gold-coin-line-art-style-png-image_2922662.jpg" onclick="moveImage('layer3')" alt="My Image"/></div>
+</body>
+</html>
